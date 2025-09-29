@@ -1,0 +1,162 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* 🖼️ Profile photo style */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ce93d8;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #4a148c;
+  border-left: 5px solid #ce93d8;
+  padding-left: 10px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Contact links */
+a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 📬 Contact Form Styles */
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a0072;
+}
+
+/* Footer */
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* ⬇️ Paste your new styles below this */
+
+.contact-links ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
