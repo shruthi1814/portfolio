@@ -1,162 +1,152 @@
-/* Reset default styles */
+/* ===== Global Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Global styles */
+/* ===== Body ===== */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9fb;
-  color: #2c3e50;
-  line-height: 1.6;
-  padding: 20px;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.7;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
+  background-color: #020617;
   text-align: center;
-  padding: 30px 0;
-  background-color: #ffffff;
-  border-bottom: 2px solid #eaeaea;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  padding: 70px 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #6a1b9a;
+  font-size: 2.6rem;
+  color: #f8fafc;
 }
 
 header p {
-  font-size: 1.5rem;
-  color: #666;
-  margin-top: 5px;
+  margin-top: 10px;
+  color: #94a3b8;
 }
 
-/* 🖼️ Profile photo style */
+/* ===== Profile Image ===== */
 .profile-photo {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #ce93d8;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  margin-bottom: 15px;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 18px;
 }
 
-/* Sections */
+/* ===== Sections ===== */
 section {
-  max-width: 800px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 25px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: 55px auto;
+  padding: 38px;
+  background-color: #020617;
+  border-radius: 16px;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s ease, background-color 0.35s ease, box-shadow 0.35s ease;
 }
 
+/* ===== Hover Boom + Light ===== */
+section:hover {
+  transform: scale(1.03) translateY(-6px);
+  background-color: #020f2e;
+  box-shadow: 0 22px 65px rgba(56, 189, 248, 0.25);
+}
+
+/* ===== Gradient Energy Line ===== */
+.section-line {
+  width: 64px;
+  height: 4px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #38bdf8, #7dd3fc);
+  margin-bottom: 16px;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.55);
+}
+
+/* ===== Section Titles ===== */
 section h2 {
   font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #4a148c;
-  border-left: 5px solid #ce93d8;
-  padding-left: 10px;
+  margin-bottom: 18px;
+  color: #e5e7eb;
+  transition: color 0.3s ease;
 }
 
-section p,
-section li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #333;
+section:hover h2 {
+  color: #7dd3fc;
+}
+
+/* ===== Text ===== */
+p, li {
+  color: #cbd5f5;
 }
 
 ul {
-  list-style-type: disc;
+  margin-top: 10px;
   padding-left: 20px;
 }
 
-/* Contact links */
-a {
-  color: #6a1b9a;
-  text-decoration: none;
+li {
+  margin-bottom: 8px;
 }
 
-a:hover {
+/* ===== Internship ===== */
+.internship {
+  margin-top: 18px;
+}
+
+.internship h3 {
+  color: #f8fafc;
+}
+
+.internship p {
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+/* ===== Contact Alignment ===== */
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 90px auto;
+  align-items: center;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.contact-item a {
+  color: #38bdf8;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  color: #7dd3fc;
   text-decoration: underline;
 }
 
-/* 📬 Contact Form Styles */
-#contact {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  section {
+    margin: 28px 15px;
+    padding: 28px;
+  }
+
+  .contact-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 }
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 25px;
-}
-
-#contact li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input,
-textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-button {
-  padding: 12px;
-  background-color: #6a1b9a;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #4a0072;
-}
-
-/* Footer */
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #999;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-}
-
-/* ⬇️ Paste your new styles below this */
-
-.contact-links ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 30px;
-}
-
-.contact-links li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-
