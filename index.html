@@ -3,109 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Shruthi | Developer Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="shortcut icon" href="favicon.jpg">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="shruthihtml.jpg" alt="Shruthi" class="nav-photo" />
+      <span class="nav-name">Shruthi V</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
   <header>
-    <img src="shruthihtml.jpg" alt="Shruthi's photo" class="profile-photo" />
+    <div class="hero-glow"></div>
+
+    <img src="shruthihtml.jpg" alt="Shruthi Photo" class="profile-photo" />
+
     <h1>Shruthi V</h1>
-    <p>• Student • Developer • Optimistic and dedicated</p>
+    <p class="hero-role">• Student • Developer • Optimistic and dedicated</p>
+    <div class="hero-divider"></div>
   </header>
 
-  <!-- ===== About ===== -->
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <div class="section-line"></div>
     <h2>👋 About Me</h2>
     <p>
-      I’m Shruthi — a student and developer who loves building tech that’s helpful,
-      human, and smart. I focus on real-world projects that make a difference —
-      in healthcare, wellness, and daily life.
+      I’m Shruthi — a student and developer focused on building thoughtful,
+      human-centered technology that creates real-world impact.
     </p>
   </section>
 
-  <!-- ===== Projects ===== -->
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <div class="section-line"></div>
-    <h2>🔧 What I’m Working On</h2>
+    <h2>🔧 Projects</h2>
     <ul>
-      <li><strong>Multilingual Telemedicine AI:</strong> Built using n8n + Gemini</li>
-      <li><strong>AI Wellness Coach App:</strong> Streamlit + AI prompts</li>
+      <li><strong>Multilingual Telemedicine AI:</strong> n8n + Gemini</li>
+      <li><strong>AI Wellness Coach:</strong> Streamlit + Prompt Engineering</li>
       <li><strong>Real-Time Bus Tracker:</strong> Python + Firebase</li>
       <li><strong>AI Learning Path Generator:</strong> Streamlit + n8n</li>
     </ul>
   </section>
 
-  <!-- ===== Skills ===== -->
+  <!-- ===== SKILLS ===== -->
   <section id="skills">
     <div class="section-line"></div>
     <h2>🛠 Skills</h2>
     <ul>
-      <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript</li>
-      <li><strong>Frameworks:</strong> Streamlit, Flask (basic)</li>
-      <li><strong>Tools:</strong> n8n, GitHub, Figma, Canva</li>
-      <li><strong>AI/ML:</strong> Gemini, GPT, Prompt Engineering</li>
+      <li>Python, HTML, CSS, JavaScript</li>
+      <li>Streamlit, Flask (basic)</li>
+      <li>n8n, GitHub, Figma, Canva</li>
+      <li>Generative AI, Prompt Engineering</li>
     </ul>
   </section>
 
-  <!-- ===== Internships ===== -->
-  <section id="internships">
+  <!-- ===== INTERNSHIPS ===== -->
+  <section>
     <div class="section-line"></div>
     <h2>💼 Internship Experience</h2>
 
-    <div class="internship">
-      <h3>Generative AI Intern</h3>
-      <p><strong>Gateway Software Solutions</strong> | June 2025 – July 2025</p>
-      <ul>
-        <li>Applied Generative AI tools to real-world problem statements.</li>
-        <li>Refined AI-driven features through prompt engineering.</li>
-      </ul>
-    </div>
+    <h3>Generative AI Intern</h3>
+    <p>Gateway Software Solutions | June 2025 – July 2025</p>
+    <ul>
+      <li>Applied Generative AI tools to real-world use cases.</li>
+      <li>Built AI-driven features using prompt engineering.</li>
+    </ul>
 
-    <div class="internship">
-      <h3>Full Stack Development Intern</h3>
-      <p><strong>Webgen Automation</strong> | March 2023 – April 2023</p>
-      <ul>
-        <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
-        <li>Built structured layouts and interactive UI components.</li>
-      </ul>
-    </div>
+    <h3>Full Stack Development Intern</h3>
+    <p>Webgen Automation | March 2023 – April 2023</p>
+    <ul>
+      <li>Developed responsive web applications.</li>
+      <li>Implemented structured layouts and interactions.</li>
+    </ul>
   </section>
 
-  <!-- ===== Vision ===== -->
-  <section id="vision">
+  <!-- ===== PAPER ===== -->
+  <section>
     <div class="section-line"></div>
-    <h2>🌈 My Vision</h2>
+    <h2>📄 Paper Publication</h2>
+    <p><strong>ICCMC 2025 – Research Paper Presentation</strong></p>
     <p>
-      I want to build AI that feels natural — tech that speaks your language,
-      understands your needs, and supports everyday lives.
+      <em>
+        Spatio-Temporal Machine Learning for Robust Urban Transit
+        using a Chaos-based Approach
+      </em>
     </p>
+    <p class="muted">Affiliated with IEEE & IEEE ComSoc</p>
   </section>
 
-  <!-- ===== Contact ===== -->
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section>
+    <div class="section-line"></div>
+    <h2>🎓 Certifications & Achievements</h2>
+    <ul class="cert-list">
+      <li>TNWISE 2025 Hackathon</li>
+      <li>UI/UX Hackathon</li>
+      <li>Prompt Forge</li>
+      <li>Design Sprint</li>
+      <li>Tata Crucible</li>
+      <li>Codebucks</li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
     <div class="section-line"></div>
     <h2>📬 Let’s Connect</h2>
 
     <div class="contact-grid">
       <div class="contact-item">
-        <span class="contact-label">Email</span>
+        <span>Email</span>
         <a href="mailto:shruthivelusamy2005@gmail.com">
           shruthivelusamy2005@gmail.com
         </a>
       </div>
 
       <div class="contact-item">
-        <span class="contact-label">GitHub</span>
+        <span>GitHub</span>
         <a href="https://github.com/shruthi1814" target="_blank">
           github.com/shruthi1814
         </a>
       </div>
 
       <div class="contact-item">
-        <span class="contact-label">LinkedIn</span>
+        <span>LinkedIn</span>
         <a href="https://www.linkedin.com/in/shruthi-velusamy/" target="_blank">
           linkedin.com/in/shruthi-velusamy
         </a>
@@ -113,5 +151,6 @@
     </div>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
