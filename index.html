@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shruthi | Developer Portfolio</title>
 
-  <title>Explore my Portfolio</title>
-
-  <!-- Favicon -->
   <link rel="icon" href="favicon.jpg" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,18 +21,24 @@
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- ===== HERO ===== -->
-  <header>
+  <header class="hero">
     <div class="hero-glow"></div>
 
-    <img src="shruthihtml.jpg" alt="Shruthi Photo" class="profile-photo" />
+    <!-- ✅ PROFESSIONAL PROFILE PHOTO -->
+    <div class="profile-frame">
+      <img src="shruthihtml.jpg" alt="Shruthi" class="profile-photo" />
+    </div>
 
     <h1>Shruthi V</h1>
-    <p class="hero-role">• Student • Developer • Optimistic and dedicated</p>
+    <p class="hero-role">• Student • Developer • Optimistic and Dedicated</p>
     <div class="hero-divider"></div>
   </header>
 
@@ -44,8 +47,7 @@
     <div class="section-line"></div>
     <h2>👋 About Me</h2>
     <p>
-      I’m Shruthi — a student and developer focused on building thoughtful,
-      human-centered technology that creates real-world impact.
+      I’m Shruthi — a student and developer passionate about building human-centered technology with real-world impact. I specialize in Python-driven development and aspire to grow as an AI engineer, creating intelligent, scalable systems through automation and agentic AI to transform complex ideas into practical solutions.
     </p>
   </section>
 
@@ -54,15 +56,12 @@
     <div class="section-line"></div>
     <h2>🔧 Projects</h2>
 
-    <!-- Core AI Projects -->
     <div class="project-item">
       <div class="project-info">
         <h3>Multilingual Telemedicine AI</h3>
         <p>n8n + Gemini</p>
       </div>
-      <a href="https://github.com/shruthi1814/telemedicine-ai-using-n8n" target="_blank" class="project-link">
-        Open ↗
-      </a>
+      <a href="https://github.com/shruthi1814/telemedicine-ai-using-n8n" target="_blank" class="project-link">Open ↗</a>
     </div>
 
     <div class="project-item">
@@ -70,9 +69,7 @@
         <h3>AI Wellness Coach</h3>
         <p>Streamlit + Prompt Engineering</p>
       </div>
-      <a href="https://github.com/shruthi1814/goal-planner" target="_blank" class="project-link">
-        Open ↗
-      </a>
+      <a href="https://github.com/shruthi1814/goal-planner" target="_blank" class="project-link">Open ↗</a>
     </div>
 
     <div class="project-item">
@@ -80,22 +77,17 @@
         <h3>AI Learning Path Generator</h3>
         <p>Streamlit + n8n</p>
       </div>
-      <a href="https://github.com/shruthi1814/learning-assistant" target="_blank" class="project-link">
-        Open ↗
-      </a>
+      <a href="https://github.com/shruthi1814/learning-assistant" target="_blank" class="project-link">Open ↗</a>
     </div>
 
-    <!-- Live Project -->
     <h4 class="project-subtitle">🚀 Live Project</h4>
 
     <div class="project-item live-project">
       <div class="project-info">
         <h3>Language Learning Platform</h3>
-        <p>HTML + CSS + JavaScript + OpenAI API</p>
+        <p>HTML, CSS, JavaScript, OpenAI API</p>
       </div>
-      <a href="https://shruthi1814.github.io/language-learning-platform/" target="_blank" class="project-link">
-        Open ↗
-      </a>
+      <a href="https://shruthi1814.github.io/language-learning-platform/" target="_blank" class="project-link">Open ↗</a>
     </div>
   </section>
 
@@ -105,14 +97,13 @@
     <h2>🛠 Skills</h2>
     <ul>
       <li>Python, HTML, CSS, JavaScript</li>
-      <li>Streamlit, Flask (basic)</li>
+      <li>Streamlit, Flask (Basic)</li>
       <li>n8n, GitHub, Figma, Canva</li>
       <li>Generative AI, Prompt Engineering</li>
     </ul>
   </section>
 
-
-    <!-- ===== INTERNSHIP EXPERIENCE ===== -->
+  <!-- ===== EXPERIENCE ===== -->
   <section id="experience">
     <div class="section-line"></div>
     <h2>💼 Internship Experience</h2>
@@ -121,10 +112,7 @@
       <div class="project-info">
         <h3>Generative AI Intern</h3>
         <p>Gateway Software Solutions | June 2025 – July 2025</p>
-        <p>
-          Applied Generative AI tools to real-world use cases.<br>
-          Built AI-driven features using prompt engineering.
-        </p>
+        <p>Applied Generative AI tools and built AI-driven features using prompt engineering.</p>
       </div>
     </div>
 
@@ -132,44 +120,58 @@
       <div class="project-info">
         <h3>Full Stack Development Intern</h3>
         <p>Webgen Automation | March 2023 – April 2023</p>
-        <p>
-          Developed responsive web applications.<br>
-          Implemented structured layouts and interactions.
-        </p>
+        <p>Developed responsive web applications and implemented structured layouts and interactions.</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications">
+    <div class="section-line"></div>
+    <h2>📄 Paper Publication</h2>
+
+    <div class="publication-card">
+      <h3>ICCMC 2025 – Research Paper Presentation</h3>
+      <p class="paper-title">
+        Spatio-Temporal Machine Learning for Robust Urban Transit using a Chaos-based Approach
+      </p>
+      <p class="paper-affiliation">
+        Affiliated with IEEE & IEEE ComSoc
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications">
+    <div class="section-line"></div>
+    <h2>🎓 Certifications & Achievements</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">TNWISE 2025 Hackathon</div>
+      <div class="cert-card">Salesforce (Agent Specialist)</div>
+      <div class="cert-card">ByteXL</div>
+      <div class="cert-card">Data Bricks</div>
+      <div class="cert-card">Analytics Vidhya</div>
+      <div class="cert-card">Prompt Forge</div>
+    </div>
+  </section>
 
   <!-- ===== CONTACT ===== -->
   <section id="contact">
     <div class="section-line"></div>
     <h2>📬 Let’s Connect</h2>
 
-    <div class="contact-grid">
-      <div class="contact-item">
-        <span>Email</span>
-        <a href="mailto:shruthivelusamy2005@gmail.com">
-          shruthivelusamy2005@gmail.com
-        </a>
-      </div>
+    <p class="contact-subtext">
+      I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+    </p>
 
-      <div class="contact-item">
-        <span>GitHub</span>
-        <a href="https://github.com/shruthi1814" target="_blank">
-          github.com/shruthi1814
-        </a>
-      </div>
-
-      <div class="contact-item">
-        <span>LinkedIn</span>
-        <a href="https://www.linkedin.com/in/shruthi-velusamy/" target="_blank">
-          linkedin.com/in/shruthi-velusamy
-        </a>
-      </div>
+    <div class="contact-cards">
+      <a href="mailto:shruthivelusamy2005@gmail.com" class="contact-card"> shruthivelusamy2005@gmail.com</a>
+      <a href="tel:+919894973701" class="contact-card"> +91 98949 73701</a>
+      <a href="https://github.com/shruthi1814" target="_blank" class="contact-card"> github.com/shruthi1814</a>
+      <a href="https://www.linkedin.com/in/shruthi-velusamy/" target="_blank" class="contact-card"> LinkedIn Profile</a>
     </div>
   </section>
 
-  <script src="script.js"></script>
 </body>
 </html>
